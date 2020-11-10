@@ -6,7 +6,6 @@ namespace lab3
     {
         public static void Main(string[] args)
         {
-            Console.Write("Input value x: ");
             double x = double.Parse(Console.ReadLine());
             int n = 1;
             double sum = p(x, n);
@@ -17,7 +16,7 @@ namespace lab3
                     n ++;
                     sum += p(x, n);
                 }
-                Console.WriteLine("Your function value: " + Math.Round(sum + p(x, n+1), 6));
+                Console.WriteLine(Math.Round(sum + p(x, n+1), 6));
             }
             else
                 Console.WriteLine("ОШИБКА! Введите число х є (0;2)");
